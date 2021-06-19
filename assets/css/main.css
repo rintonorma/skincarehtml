@@ -227,6 +227,10 @@ section{
 .btn-social:active {
  opacity: .75;
 }
+.icon-lg{
+  width: 28px;
+  height: 28px;
+}
 .navbar-bottom{
     position: fixed;
     bottom: 0;
@@ -1285,6 +1289,60 @@ section{
 
 .review-list .review-item .review-item-content{
   width: 70%;
+}
+
+#backpage{
+  background: #e9549e;
+  color: #fff;
+  padding: 15px 0;
+  position: --webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.howtoPay {
+  font-size: 12px;
+}
+.howtoPay p {
+  font-size: 12px;
+}
+
+.howtoPay ol{
+  list-style: decimal;
+  padding-left: 15px;
+}
+
+.paymentCode{
+  display: flex;
+  align-items: center;
+}
+.checkout-desc-container .card-header {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+  background: white;
+  border-bottom: none;
+  padding: 20px;
+  padding-bottom: 0;
+  
+}
+.checkout-cta-container {
+  padding: 20px;
+  border-top: none;
+}
+.checkout-cta-container .checkout-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+@media (max-width: 767px){
+  .paymentCode{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
 }
 
 @media screen and (max-width: 480px){
