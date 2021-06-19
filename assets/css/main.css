@@ -1317,8 +1317,58 @@ section{
   display: flex;
   align-items: center;
 }
+.checkout-progress {
+  background: #efefef;
+}
+.checkout-progress .cp-item {
+  color: #999;
+  width: 50%;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  grid-gap: 5px;
+}
+.checkout-progress .cp-item .icon {
+  /*margin-right: 10px;*/
+}
+
+.checkout-progress .cp-item .text{
+  vertical-align: middle;
+}
+
+.checkout-progress .cp-item:first-child:after {
+  content: '';
+  width: 15%;
+  height: 3px;
+  background: #999;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.checkout-progress .cp-item:last-child:before {
+  content: '';
+  width: 15%;
+  height: 3px;
+  background: #999;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.checkout-progress .cp-item.active {
+  color: #ea549e;
+}
+.checkout-desc-container{
+  text-align: left;
+}
 .checkout-desc-container .card-header {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   color: #333;
   background: white;
@@ -1326,6 +1376,59 @@ section{
   padding: 20px;
   padding-bottom: 0;
   
+}
+.checkout-desc-container .card-body .listIcon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.checkout-desc-container .card-body label {
+    padding: 15px 20px;
+    font-size: 13px;
+    color: #777;
+}
+.checkout-desc-container .card-body .listIcon .li-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 15px 20px;
+}
+.checkout-desc-container .card-body .listIcon .inactive {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+}
+.checkout-desc-container .card-body .listIcon:hover {
+  background: #f5f5f5;
+}
+
+.checkout-desc-container .card-body .listIcon:last-child {
+  margin-bottom: 20px;
+}
+
+.checkout-desc-container .card-body .listIcon .li-title .li-img {
+    margin-right: 15px;
+    width: 32px;
+    text-align: center;
+}
+.checkout-desc-container .card-body .listIcon .li-title .li-img img {
+    width: 32px;
+}
+
+.checkout-desc-container .address-list ul li a{
+  color: #343a40;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #f5f5f5;
+   text-align: left;
+}
+.checkout-desc-container .address-list ul li a:hover{
+  color: #ea549e;
 }
 .checkout-cta-container {
   padding: 20px;
